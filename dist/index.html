@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="bundle.js"></script>
+    <title>Covid Data</title>
+</head>
+<body>
+    <!-- <div class="bg-picture">
+        <img src="./assets/send.jpg" alt="picture">
+     </div>-->
+   
+     <div class="header">
+             <h2>Covid Data</h2>
+             <i class="bi bi-virus"></i>
+         </div>
+         <div class="search-bar">
+              <div class="form-container">
+                 <form action="" id="form">
+                     <div id="country" class="form-item" >
+                         <input id ="country-input" required type="text" placeholder="country">
+                     </div>
+                     <div class="horizontal-spacer"></div>
+                     <div id="search" class="form-item" >
+                         <button id="reset-btn" type="reset">Reset</button>
+                         <button id="submit" type="submit">Search</button>
+                     </div>
+                 </form>
+             </div>
+         </div>
+         <div class="content">
+             <div id="error-message" class="error-message" style="display: none;">Error occcured in data loading!</div>
+         <div class="weather-container" id="cards-container"></div>
+     </div>
+      <div class="statistic">
+        <div style="width: 800px;">
+            <canvas id="canvas-statistic"></canvas>
+        </div>
+     </div>    
+</body>
+</html>

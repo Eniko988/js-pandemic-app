@@ -1,0 +1,246 @@
+@import'~bootstrap';
+
+    $font-color:#fff;
+    $primary-color:#f5f4eb;
+    $secondary-color:#E9252F;
+    $header-color: #13817e;
+    $card-title-color:#6DDAF2;
+    $card-color: #111b3e;
+    $capsule-color: #9049BF;
+    $search-bar-color:#060830;
+    $chart-container-color:#010B40;
+    $person-color:#9049BF;
+    $trash-color: #2ADFCD;
+
+
+    body{
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        color: $primary-color;
+        font-weight:bold;
+    }
+
+    .header{
+        display: flex;
+        font-weight: 800;
+        background-color: $header-color;
+        i{
+           padding:8px 10px;
+    }
+        h2{
+            padding:8px;
+        }    
+}
+
+.bi-virus{
+    font-size: 1.5rem;
+    color:$primary-color;
+    font-weight: 600;
+    
+    animation: pulse 5s infinite;
+      
+      @keyframes pulse {
+        0% {
+          color: #ffffff;
+        }
+        25%{
+            color:#f3f707
+        }
+        50% {
+          color: #FF4136;
+        }   
+        75% {
+          color: #08f508;
+        }   
+        100% {
+          color: #050369;
+        }   
+    }    
+}
+
+
+p {
+    white-space: nowrap;
+    overflow: hidden;  
+    font-size: 20px;
+    color: white;  
+    margin-top: 16px;
+    margin-left: 170px;
+    margin-bottom: 1rem;
+  }
+  
+p {
+    animation: animated-text 3s steps(30,end) 2s 10 normal both;
+  }
+  
+  
+ @keyframes animated-text{
+    from{width: 0;}
+    to{width: 472px;}
+  }
+  
+
+.search-bar{
+    background-color:$search-bar-color;
+}
+
+.form-container > form{
+  display: flex;
+  align-items: center;
+  gap:16px;
+
+}
+
+    select{
+        line-height: 32px;
+        height: 32px;
+        border: 1px solid #747474;
+        border-radius: 4px;
+        width: 200px;
+        background-color: #E6F4FF;
+       
+    }
+    
+    #country{
+        flex: 3 1 auto;
+        
+        select{
+            width: 100%;
+        }
+    }
+    
+    .content, .search-bar{
+        padding: 16px;
+    }
+    .content{
+        overflow-x: auto;
+    }
+    .horizontal-spacer{
+        flex: 1 1 auto;
+    }
+    
+    .bi-clipboard-data{
+        color:#FFF;
+        font-weight: 600;
+        font-size: 1.5rem;
+        padding: 8px 16px;
+    }
+
+.error-message {
+     text-align: center;
+     background-color: $secondary-color;
+     color: $font-color;
+     font-size: 18px;
+     padding: 10px;
+     border-radius: 4px;
+}
+
+
+button{
+    border:0;
+    background: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    i{
+        color:#FFF;
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+}
+
+
+#content-img{
+    position: relative; 
+    height: 100vh;
+    width: 100%;
+
+    background-size: cover;
+    background-image: url(/assets/earth.jpg);
+}
+
+  
+.covid-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+.card-content{
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        font-size: 20px;
+        color:$font-color;
+        font-weight: 600;
+        margin-top: 20px;
+        gap:20px
+    }
+
+zizi-card {
+       width:30%;
+       color: $card-title-color;
+       font-size: 25px;
+       background:$card-color;
+       opacity: .9;
+       animation: fadeIn 3s;
+       box-shadow: -2px 7px 21px -9px rgb(93 176 219 / 90%);
+       border: 1px solid #375272;
+
+    }
+
+.bi-person-fill{
+        color:$person-color;
+        margin-right: 6px;
+        font-weight: 300;
+    }
+.bi-capsule{
+        color:$capsule-color;
+        margin-right: 6px;
+        font-weight: 300;
+    }
+    
+.delete-btn{
+        display:flex;
+        justify-content: flex-end;
+
+    i{
+        color: $trash-color;
+        cursor: pointer;
+        font-size: 1.5rem;
+    }
+}
+
+.loader {
+        width: 58px;
+        height: 58px;
+        border: 5px dotted #FFF;
+        border-radius: 50%;
+        display: inline-block;
+        position: relative;
+        box-sizing: border-box;
+        animation: rotation 2s linear infinite;
+      }
+      
+@keyframes rotation {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      } 
+
+.chart-container{
+        width:100vw;
+        height:100vh;
+        background-color:$chart-container-color;
+        padding:16px;
+      }
+ .stat-title{
+        background-color:$search-bar-color;
+        color:#FFF;
+        display: flex;
+        justify-content: center;
+        padding:16px;
+      }

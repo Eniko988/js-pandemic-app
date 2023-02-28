@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="bundle.js"></script>
+    <title>Covid-19 Data</title>
+</head>
+<body>
+     <div class="header">
+        <h2>Covid-19 Data</h2>
+             <i class="bi bi-virus"></i>
+             <p>Find covid data in middle Europe...</p>
+         </div>
+         <div class="search-bar">
+              <div class="form-container">
+                 <form action="" id="form">
+                     <div id="country" class="form-item">
+                        <select id ="country-input">
+                            <option value="">please select country...</option>
+                            <option value="Austria">Austria</option>
+                            <option value="France">France</option>
+                            <option value="Hungary">Hungary</option>
+                            <option value="Romania">Romania</option>
+                            <option value="Slovenia">Slovenia</option>
+                            <option value="Slovakia">Slovakia</option>
+                          </select>
+                        </div>
+                        <div class="horizontal-spacer"></div>
+                        <div id="search" class="form-item" >   
+                            <button id="submit" type="submit"><i class="bi bi-search"></i></button>
+                            <button id="reset-btn" type="reset"><i class="bi bi-x-circle"></i></button>
+                            <a href="#chart-container"><i class="bi bi-clipboard-data"></i></a>
+                     </div>
+                 </form>
+             </div>
+         </div>
+         <div class="content" id="content-img">
+          <div id="error-message" class="error-message" style="display: none;">Error occcured in data loading!</div>
+         <div class="covid-container" id="cards-container"></div>
+     </div>
+     <div class="stat-title">
+        <h3>Covid-19 statistic in middle Europe</h3>
+     </div>
+        <div class="chart-container" id="chart-container">
+            <canvas id="my-chart"></canvas>     
+        </div> 
+</body>
+</html>
